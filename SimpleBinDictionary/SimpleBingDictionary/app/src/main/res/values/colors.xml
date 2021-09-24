@@ -10,4 +10,5 @@
 
     <color name="bellaColor">#FFEBED</color>
     <color name="textColor">#5C1D18</color>
+    <color name="secondaryBellaColor">#FBF2F1</color>
 </resources>
