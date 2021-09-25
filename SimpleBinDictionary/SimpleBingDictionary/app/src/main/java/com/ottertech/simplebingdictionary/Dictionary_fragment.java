@@ -3,6 +3,8 @@ package com.ottertech.simplebingdictionary;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,6 +63,15 @@ public class Dictionary_fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.dictionary_grid_fragment, container, false);
+
+        //Setup RecycleView
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),1,GridLayoutManager.VERTICAL,false));
+
+        DictionaryRecyclerViewAdapter adapter = new DictionaryRecyclerViewAdapter();
+
+
         return  view;
     }
 }
