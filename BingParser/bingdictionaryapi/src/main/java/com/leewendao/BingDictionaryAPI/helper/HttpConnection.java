@@ -1,5 +1,12 @@
 package com.leewendao.BingDictionaryAPI.helper;
 
-public class HttpConnection {
+import com.leewendao.BingDictionaryAPI.Connection;
+
+public class HttpConnection implements Connection{
+
+    @Override
+    public Connection url(String url) {
         
+    }
+    
 }
